@@ -4,6 +4,7 @@ $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
 $color-teal: #17a2b8;
+$color-black: #4d4d4d;
 $color-transparent-black: rgba(0, 0, 0, 0.5);
 
 body{
@@ -43,7 +44,7 @@ footer {
 }
 
 .navbar {
-    background-color: $color-mid;
+    background-color: $color-black;
 }
 
 .carousel-caption {
@@ -71,4 +72,57 @@ footer {
         background-color: $color-mid;
         color: white;
     }
+}
+
+// ----------------------- Dark Switch
+
+#dSwitch {
+    padding: 0, 0, 2em, 0;
+}
+
+.darkMode {
+    background-color: #343a40;
+    color: #901CAD;
+}
+/*------TOGGLE--------*/
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+#darkSwitch {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 20px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked+#darkSwitch {
+    background: #901CAD;
+}
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 13px;
 }
