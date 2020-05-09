@@ -26,25 +26,27 @@ header {
 }
 
 footer {
-    background-image: linear-gradient($color-pale, white);
+    background-image: linear-gradient($color-transparent-black, $color-black);
     padding: 20px 0;
 }
 
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right,$color-secondary, $color-primary, $color-dark);
+    background-image: linear-gradient(to right,$color-transparent-black, $color-primary, $color-dark);
     color: white; 
 }
 
 .row-content {
+    background-color:$color-transparent-black;
+    color: white;
     padding: 50px 0; 
     border-bottom: 1px ridge; 
     min-height: 200px; 
 }
 
 .navbar {
-    background-color: $color-black;
+    background-color: $color-transparent-black;
 }
 
 .carousel-caption {
@@ -126,3 +128,19 @@ input:checked+label:after {
 label:active:after {
     width: 13px;
 }
+
+
+//--------------Parallax
+.parallax {
+    /* The image used */
+    background-image: url("../img/PCTSOBO.jpg");
+  
+    /* Set a specific height */
+    height: 100px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
