@@ -2,16 +2,16 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3 {
-  font-family: "Lobster", cursive; }
+  font-family: "Montserrat Alternates", cursive; }
 
 h2 {
-  color: #3046C5; }
+  color: lightblue; }
 
 header h2 {
   color: #CEC8FF; }
 
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #4d4d4d);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #303233);
   padding: 20px 0; }
 
 .jumbotron {
@@ -21,7 +21,7 @@ footer {
   color: white; }
 
 .row-content {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #303233;
   color: white;
   padding: 50px 0;
   border-bottom: 1px ridge;
@@ -34,7 +34,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel {
-  border: solid #5637dd; }
+  border: solid white; }
 
 #carouselButton {
   position: absolute;

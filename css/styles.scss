@@ -4,7 +4,7 @@ $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
 $color-teal: #17a2b8;
-$color-black: #4d4d4d;
+$color-black: #303233;
 $color-transparent-black: rgba(0, 0, 0, 0.5);
 
 body{
@@ -12,11 +12,11 @@ body{
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive; 
+    font-family: "Montserrat Alternates", cursive; 
 }
 
 h2{
-    color: $color-primary;
+    color: lightblue;
 }
 
 header {
@@ -38,7 +38,7 @@ footer {
 }
 
 .row-content {
-    background-color:$color-transparent-black;
+    background-color:$color-black;
     color: white;
     padding: 50px 0; 
     border-bottom: 1px ridge; 
@@ -54,7 +54,7 @@ footer {
 }
 
 .carousel {
-    border: solid $color-secondary;
+    border: solid white;
 }
 
 #carouselButton{
